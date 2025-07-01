@@ -75,19 +75,7 @@ Esempio di matrice di confusione visualizzata:
 
 ![Esempio matrice di confusione](https://raw.githubusercontent.com/emamira02/GenderRecognition_DeepL/refs/heads/main/output/confusion_matrix.png)
 
-**4. Classification report**
-```
-              precision    recall  f1-score   support
-
-       Female       0.95      0.94      0.94       500
-         Male       0.94      0.95      0.95       500
-
-    accuracy                           0.95      1000
-   macro avg       0.95      0.95      0.95      1000
-weighted avg       0.95      0.95      0.95      1000
-```
-
-**5. Visualizzazione predizioni su immagini di test**
+**4. Visualizzazione predizioni su immagini di test**
 Esempio di output:
 
 ![Esempio predizione](https://raw.githubusercontent.com/emamira02/GenderRecognition_DeepL/refs/heads/main/output/output1.png)
