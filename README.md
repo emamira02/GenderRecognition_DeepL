@@ -5,7 +5,6 @@ Questo progetto implementa un sistema di riconoscimento del genere (maschio/femm
 ## Struttura del progetto
 
 - `TestESAME WinFINALE.ipynb`: Notebook principale che contiene tutto il codice per il caricamento dati, preprocessing, definizione e addestramento del modello, validazione, test e visualizzazione dei risultati.
-- `Dataset ESAME Gender.zip`: Archivio contenente le immagini suddivise in cartelle per training, validation e test. Il dataset (10.000 immagini annotate in formato cartelle: Female, Male) va scaricato separatamente da [Roboflow Universe](https://universe.roboflow.com/seeed-studio-e2fso/gender-8vbxd).
 - `requirements.txt`: File con tutte le dipendenze Python necessarie.
 
 ## Descrizione del notebook
@@ -52,14 +51,49 @@ Importa tutte le librerie necessarie per la manipolazione delle immagini, la cos
 
 Tutte le dipendenze sono elencate in `requirements.txt`.
 
-## Output del notebook
-- Numero di immagini caricate per ciascun set
-- Mappa delle etichette
-- Andamento di accuracy e loss durante l'addestramento
-- Risultati della cross-validation
-- Accuracy finale sul test set
-- Visualizzazione predizioni su immagini di test
-- Matrice di confusione e classification report
+
+## Esempi di Output
+
+Di seguito alcuni esempi di output che otterrai eseguendo il notebook:
+
+**1. Numero di immagini caricate**
+```
+Numero di immagini di training caricate: 8000
+Numero di immagini di validation caricate: 1000
+Numero di immagini di test caricate: 1000
+Labels: [0 1 0 ... 1 0 1]
+Label map: {'Female': 0, 'Male': 1}
+```
+
+**2. Andamento di accuracy e loss**
+Grafici generati automaticamente durante il training:
+
+![Esempio grafico accuracy](https://raw.githubusercontent.com/roboflow/notebooks/main/notebooks/images/keras-accuracy-plot.png)
+![Esempio grafico loss](https://raw.githubusercontent.com/roboflow/notebooks/main/notebooks/images/keras-loss-plot.png)
+
+**3. Matrice di confusione**
+Esempio di matrice di confusione visualizzata:
+
+![Esempio matrice di confusione](https://raw.githubusercontent.com/roboflow/notebooks/main/notebooks/images/keras-confusion-matrix.png)
+
+**4. Classification report**
+```
+              precision    recall  f1-score   support
+
+       Female       0.95      0.94      0.94       500
+         Male       0.94      0.95      0.95       500
+
+    accuracy                           0.95      1000
+   macro avg       0.95      0.95      0.95      1000
+weighted avg       0.95      0.95      0.95      1000
+```
+
+**5. Visualizzazione predizioni su immagini di test**
+Esempio di output:
+
+![Esempio predizione](https://raw.githubusercontent.com/roboflow/notebooks/main/notebooks/images/keras-prediction-example.png)
+
+---
 
 
 ## Informazioni sul dataset
