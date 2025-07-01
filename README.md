@@ -68,13 +68,12 @@ Label map: {'Female': 0, 'Male': 1}
 **2. Andamento di accuracy e loss**
 Grafici generati automaticamente durante il training:
 
-![Esempio grafico accuracy](https://raw.githubusercontent.com/roboflow/notebooks/main/notebooks/images/keras-accuracy-plot.png)
-![Esempio grafico loss](https://raw.githubusercontent.com/roboflow/notebooks/main/notebooks/images/keras-loss-plot.png)
+![Esempio grafico accuracy e loss](https://raw.githubusercontent.com/emamira02/GenderRecognition_DeepL/refs/heads/main/output/graphics_accu_loss.png)
 
 **3. Matrice di confusione**
 Esempio di matrice di confusione visualizzata:
 
-![Esempio matrice di confusione](https://raw.githubusercontent.com/roboflow/notebooks/main/notebooks/images/keras-confusion-matrix.png)
+![Esempio matrice di confusione](https://raw.githubusercontent.com/emamira02/GenderRecognition_DeepL/refs/heads/main/output/confusion_matrix.png)
 
 **4. Classification report**
 ```
@@ -91,8 +90,10 @@ weighted avg       0.95      0.95      0.95      1000
 **5. Visualizzazione predizioni su immagini di test**
 Esempio di output:
 
-![Esempio predizione](https://raw.githubusercontent.com/roboflow/notebooks/main/notebooks/images/keras-prediction-example.png)
-
+![Esempio predizione](https://raw.githubusercontent.com/emamira02/GenderRecognition_DeepL/refs/heads/main/output/output1.png)
+![Esempio predizione](https://raw.githubusercontent.com/emamira02/GenderRecognition_DeepL/refs/heads/main/output/output2.png)
+![Esempio predizione](https://raw.githubusercontent.com/emamira02/GenderRecognition_DeepL/refs/heads/main/output/output3.png)
+![Esempio predizione](https://raw.githubusercontent.com/emamira02/GenderRecognition_DeepL/refs/heads/main/output/output4.png)
 ---
 
 
